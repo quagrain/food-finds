@@ -2,18 +2,22 @@
 	"name": "Food Finds Dev Container",
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
 
-	"postCreateCommand": "npm install && cd frontend && npm install && cd ../backend && npm install",
+	"postCreateCommand": "bash ./devcontainer/post-create.sh",
 
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode"
 			]
 			
 		},
 		"settings": {
-			"terminal.integrated.defaultProfile.linux": "bash",
-			"editor.defaultFormatter": "vscode.github"
-	  	}
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[sql]": {
+        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+      }
+    }
 	}
 }
