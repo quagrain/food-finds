@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/button";
 export default function NavBar() {
   return (
     <nav className="flex justify-between p-4 bg-black">
-      <Link className="ml-2 navbar-brand text-primary tracking-tight text-3xl font-bold" href="/">
+      <Link className="ml-2 navbar-brand text-primary tracking-tight text-3xl font-bold" href="/frontend/public">
         Food Finds
       </Link>
 

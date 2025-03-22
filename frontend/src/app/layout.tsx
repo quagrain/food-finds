@@ -2,8 +2,7 @@ import {ThemeProvider} from "next-themes";
 import type {Metadata} from "next";
 
 import "./globals.css";
-import Home from "@/app/home/page";
-import NavBar from "@/app/navbar/page";
+import NavBar from "@/components/navbar/page";
 
 export const metadata: Metadata = {
   title: "Food Finds",
@@ -15,10 +14,13 @@ export default function RootLayout({children}: Readonly<{
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-background">
+      <body>
         <NavBar />
-        <Home />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <main className="mx-auto max-w-6xl px-3 py-10">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
