@@ -1,3 +1,6 @@
+CREATE DATABASE foodfinds;
+USE foodfinds;
+
 CREATE TABLE schools (
     id INT PRIMARY KEY AUTO_INCREMENT, -- we might want to use UUID to generate ids but I'll leave it with you to choose
     school_name VARCHAR(255) NOT NULL,
