@@ -48,6 +48,7 @@ class UsersLoginView(APIView):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+# just random
 class RetrieveUserProfileDetailsView(generics.RetrieveAPIView):
     # permission_classes = [IsAuthenticated]
     permission_classes = [AllowAny]
