@@ -8,6 +8,8 @@ import {
   DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import H2 from "@/components/H2";
+import H3 from "@/components/H3";
 
 export default function Hero() {
   const [position, setPosition] = useState<string>("ashesi");
@@ -18,7 +20,7 @@ export default function Hero() {
         <Image src="/images/hero.png" alt="Hero section with an image of different food" fill/>
         <div
           className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Find vendors in your campus!</h2>
+          <H2 className="text-3xl md:text-4xl font-bold mb-2">Find vendors in your campus!</H2>
           <p className="text-lg">Discover a variety of options at your fingertips!</p>
         </div>
       </div>
@@ -28,7 +30,7 @@ export default function Hero() {
           <DropdownMenu>
             <DropdownMenuTrigger
               className="p-4 border-r text-center hover:cursor-pointer hover:bg-gray-100 decoration-0">
-              <h3 className="font-medium">Campus</h3>
+              <H3 className="font-normal text-xl">Campus</H3>
               <p className="text-sm text-black/60">Select campus</p>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
@@ -40,16 +42,16 @@ export default function Hero() {
             </DropdownMenuContent>
           </DropdownMenu>
           <div className="p-4 border-r text-center">
-            <h3 className="font-medium">Menu</h3>
+            <H3 className="font-normal text-xl">Menu</H3>
             <p className="text-sm text-black/60">View items</p>
           </div>
           <div className="p-4 border-r text-center">
-            <h3 className="font-medium">Cart</h3>
+            <H3 className="font-normal text-xl">Cart</H3>
             <p className="text-sm text-black/60">Review order</p>
           </div>
           <div className="flex items-center justify-between p-4">
             <div className="text-center flex-1">
-              <h3 className="font-medium">Discounts</h3>
+              <H3 className="font-normal text-xl">Discounts</H3>
               <p className="text-sm text-black/60">Special offers</p>
             </div>
           </div>
