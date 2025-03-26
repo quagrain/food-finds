@@ -2,7 +2,7 @@
 	"name": "Food Finds Dev Container",
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
 
-	"postCreateCommand": "cd frontend && npm i && npm run dev",
+	"postCreateCommand": "cd frontend && npm i",
 
 	"customizations": {
 		"vscode": {
